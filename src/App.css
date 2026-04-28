@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('./assets/fonts/SpaceMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('./assets/fonts/SpaceMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('./assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+  font-family: 'SpaceMono';
+}
+
+.hero-title{
+  font-family: 'BebasNeue';
+  line-height: 80px;
+}
+
+.title{
+  font-family: 'BebasNeue';
+  line-height: 55x;
+}
