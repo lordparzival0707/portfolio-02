@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.1.18",
     "axios": "^1.13.6",
     "daisyui": "^5.5.19",
+    "devicon": "^2.17.0",
     "framer-motion": "^12.26.2",
     "phosphor-react": "^1.4.1",
     "react": "^19.1.0",

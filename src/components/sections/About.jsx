@@ -1,7 +1,9 @@
+import { Buildings, Folder, Code, Cpu } from "phosphor-react";
+
 export default function About() {
 
     return (
-        <div className="p-[24px] bg-base-200 flex flex-col gap-16">
+        <div className="p-[24px] min-h-screen bg-base-200 flex flex-col gap-16">
 
             <p className="title text-6xl"> About me </p>
             <p>
@@ -13,23 +15,23 @@ export default function About() {
 
             <div className="text-center grid grid-cols-2 gap-5">
                 <div>
-                    <p className="justify-center font-bold text-[32px]">0</p>
-                    <p>Experience</p>
+                    <p className="font-bold text-[32px]">0</p>
+                    <p className="flex flex-row gap-1.5 items-center justify-center"> <Buildings weight="bold" />  Experience</p>
                 </div>
 
                 <div>
                     <p className="font-bold text-[32px]">10+</p>
-                    <p>Projects</p>
+                    <p className="flex flex-row gap-1.5 items-center justify-center"> <Folder weight="bold" /> Projects </p>
                 </div>
 
                 <div>
                     <p className="font-bold text-[32px]">8</p>
-                    <p>Languages</p>
+                    <p className="flex flex-row gap-1.5 items-center justify-center"> <Code weight="bold" />  Languages </p>
                 </div>
 
                 <div>
                     <p className="font-bold text-[32px]">6</p>
-                    <p>Frameworks</p>
+                    <p className="flex flex-row gap-1.5 items-center justify-center"> <Cpu weight="bold" /> Frameworks </p>
                 </div>
             </div>
 
