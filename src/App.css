@@ -21,16 +21,22 @@
     font-style: normal;
 }
 
-body{
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+
+body {
   font-family: 'SpaceMono';
+  background-color: var(--color-base-200);
 }
 
-.hero-title{
+.hero-title {
   font-family: 'BebasNeue';
-  line-height: 80px;
+  line-height: 1;
 }
 
-.title{
+.title {
   font-family: 'BebasNeue';
-  line-height: 55x;
+  line-height: 1.1;
 }
