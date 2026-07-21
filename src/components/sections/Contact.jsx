@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Envelope, Phone, MapPin, PaperPlaneRight, GithubLogo, LinkedinLogo, CheckCircle } from "phosphor-react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -17,22 +18,46 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!formData.name || !formData.email || !formData.message) return;
 
     setLoading(true);
-    // Simulate API submission
-    setTimeout(() => {
-      setLoading(false);
+
+    try {
+      await emailjs.send(
+        "service_j21gct5",
+        "template_c779k5b",
+        {
+          name: formData.name,
+          email: formData.email,
+          title: formData.subject,
+          message: formData.message,
+        },
+        "bF2W1P0APeBqGyEO3"
+      );
+
       setSubmitted(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 1200);
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+    } catch (error) {
+      console.error(error);
+      alert("Erreur lors de l'envoi");
+    }
+
+    setLoading(false);
   };
 
   return (
     <section id="contact" className="py-20 px-6 md:px-12 lg:px-24 bg-base-200 flex items-center min-h-screen overflow-hidden">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -51,7 +76,7 @@ export default function Contact() {
           <div className="lg:col-span-5 flex flex-col gap-6 justify-between">
             <div className="flex flex-col gap-6">
               <h3 className="text-xl font-bold font-mono tracking-tight text-base-content mb-2">Connect Info</h3>
-              
+
               <div className="flex gap-4 items-center">
                 <div className="text-primary bg-primary/5 p-3.5 rounded-2xl border border-base-300/30">
                   <Envelope size={24} weight="regular" />
@@ -90,10 +115,10 @@ export default function Contact() {
             <div className="pt-8 border-t border-base-300/40">
               <h4 className="text-xs uppercase font-bold tracking-wider text-base-content/40 font-mono mb-4">Follow Me</h4>
               <div className="flex gap-3">
-                <a 
-                  href="https://github.com/lordparzival0707" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://github.com/lordparzival0707"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-outline btn-circle border-base-300 hover:bg-primary hover:border-primary hover:text-primary-content transition-all duration-300"
                   aria-label="GitHub Profile"
                 >
