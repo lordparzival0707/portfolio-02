@@ -22,7 +22,13 @@ export default function About() {
             <br />
             <br />
 
-            <a className="btn btn-primary" href="https://drive.google.com/file/d/1LwupwVUVNaZfkGbJ9VXhWdmpUdM1PCoN/view?usp=drive_link"> Link to my CV </a>
+            <a
+              className="btn btn-primary"
+              href="/Yako_RABESON_CV_2026.pdf"
+              download="Yako_RABESON_CV_2026.pdf"
+            >
+              Download my CV
+            </a>
           </p>
         </div>
 
