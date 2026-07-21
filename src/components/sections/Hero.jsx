@@ -17,7 +17,7 @@ export default function Hero() {
             RABESON
           </h1>
           <p className="font-bold text-lg md:text-xl text-primary mt-4 font-mono">
-            Full-stack developer junior
+            Web developer
           </p>
         </div>
 

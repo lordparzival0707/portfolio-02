@@ -11,19 +11,21 @@ const skillsData = [
       { name: "Typescript", icon: "devicon-typescript-plain colored" },
       { name: "Java", icon: "devicon-java-plain colored" },
       { name: "C#", icon: "devicon-csharp-plain colored" },
+      { name: "PHP", icon: "devicon-php-plain colored" },
     ],
   },
   {
     category: "FRONT",
     skills: [
       { name: "React", icon: "devicon-react-plain colored" },
+      { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
     ],
   },
   {
     category: "BACK",
     skills: [
-      { name: "Node.js", icon: "devicon-nodejs-plain colored" },
-      { name: "Springboot", icon: "devicon-springboot-plain colored" },
+      { name: ".NET", icon: "devicon-csharp-plain colored" },
+      { name: "Springboot", icon: "devicon-spring-plain colored" },
       { name: "Laravel", icon: "devicon-laravel-plain colored" },
     ],
   },
@@ -38,6 +40,7 @@ const skillsData = [
   {
     category: "TOOLS",
     skills: [
+      { name: "Git / Github", icon: "devicon-github-plain colored" },
       { name: "Figma", icon: "devicon-figma-plain colored" },
       { name: "Illustrator", icon: "devicon-illustrator-plain colored" },
     ],

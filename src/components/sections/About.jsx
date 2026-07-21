@@ -42,7 +42,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="p-6 rounded-3xl bg-base-100 border border-base-300 shadow-xs hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-2"
           >
-            <p className="font-bold text-4xl md:text-5xl text-primary font-mono">10+</p>
+            <p className="font-bold text-4xl md:text-5xl text-primary font-mono">5+</p>
             <p className="flex flex-row gap-1.5 items-center justify-center text-xs md:text-sm font-semibold text-base-content/70">
               <Folder weight="bold" className="text-primary" /> Projects
             </p>
@@ -55,7 +55,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="p-6 rounded-3xl bg-base-100 border border-base-300 shadow-xs hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-2"
           >
-            <p className="font-bold text-4xl md:text-5xl text-primary font-mono">8</p>
+            <p className="font-bold text-4xl md:text-5xl text-primary font-mono">7</p>
             <p className="flex flex-row gap-1.5 items-center justify-center text-xs md:text-sm font-semibold text-base-content/70">
               <Code weight="bold" className="text-primary" /> Languages
             </p>
@@ -68,7 +68,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="p-6 rounded-3xl bg-base-100 border border-base-300 shadow-xs hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-2"
           >
-            <p className="font-bold text-4xl md:text-5xl text-primary font-mono">6</p>
+            <p className="font-bold text-4xl md:text-5xl text-primary font-mono">5</p>
             <p className="flex flex-row gap-1.5 items-center justify-center text-xs md:text-sm font-semibold text-base-content/70">
               <Cpu weight="bold" className="text-primary" /> Frameworks
             </p>

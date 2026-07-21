@@ -1,41 +1,60 @@
 import { motion } from "framer-motion";
 import { Folder, GithubLogo, ArrowSquareOut } from "phosphor-react";
 
+// NOTE: Please ensure images are placed in src/assets/projects/
+import ecommerceImg from "../../assets/projects/ecommerce.png";
+import fishFarmingImg from "../../assets/projects/fish-farming.png";
+import dotgameImg from "../../assets/projects/dotgame.png";
+import reservationVehiculeImg from "../../assets/projects/reservation-vehicule.png";
+import forageImg from "../../assets/projects/forage.png";
+
 const projectsData = [
   {
-    title: "EduManage",
-    description: "A comprehensive management system for educational institutions. Facilitates course organization, student enrollment, grading, and dynamic scheduling with an elegant administrative dashboard.",
-    technologies: ["React", "Node.js", "Express", "PostgreSQL"],
-    github: "https://github.com/Yako-Rabeson",
-    demo: "https://github.com/Yako-Rabeson",
+    title: "E-Commerce",
+    description: "E-commerce platform with a product catalog, shopping cart management, order management, and administration.",
+    technologies: ["React", "Tailwind CSS", "Bagisto (Laravel)", "MySql"],
+    github: "https://github.com/lordparzival0707/e-commerce-eval",
+    demo: "https://github.com/lordparzival0707/e-commerce-eval",
+    image: ecommerceImg,
   },
   {
-    title: "MadaExplore",
-    description: "A web platform dedicated to promoting Madagascar's unique tourism. Features automated tour booking, interactive map integration, and an administrator panel for catalog management.",
-    technologies: ["React", "Spring Boot", "MySQL", "Tailwind CSS"],
+    title: "Fish farming",
+    description: "Web application for monitoring fish farming activities",
+    technologies: ["React", "Tailwind CSS", "Spring boot", "PostgreSql"],
     github: "https://github.com/Yako-Rabeson",
     demo: "https://github.com/Yako-Rabeson",
+    image: fishFarmingImg,
   },
   {
-    title: "Clinica",
-    description: "A modern clinic management dashboard designed to digitize medical files, streamline patient scheduling, manage doctor calendars, and handle automated digital prescriptions securely.",
-    technologies: ["React", "C#", ".NET Core", "PostgreSQL"],
-    github: "https://github.com/Yako-Rabeson",
-    demo: "https://github.com/Yako-Rabeson",
+    title: "Connect five",
+    description: "A game application where the goal is to be the first player to connect five points between the two players.",
+    technologies: [".NET (C#)"],
+    github: "",
+    demo: "",
+    image: dotgameImg,
   },
   {
-    title: "Portfoli-O",
-    description: "A highly customized portfolio application utilizing interactive design principles, custom typography, fluid smooth scrolling, and micro-interactions for an immersive user experience.",
-    technologies: ["React", "TypeScript", "Framer Motion", "Tailwind v4"],
-    github: "https://github.com/Yako-Rabeson",
-    demo: "https://github.com/Yako-Rabeson",
+    title: "Vehicle reservation",
+    description: "A web application for airport-to-hotel vehicle reservation and transportation management.",
+    technologies: ["Spring boot", "Thymeleaf", "Tailwind CSS"],
+    github: "",
+    demo: "",
+    image: reservationVehiculeImg,
+  },
+  {
+    title: "Forage",
+    description: "A web application for a water drilling company (quote requests, customer management, transaction tracking, etc.).",
+    technologies: ["Spring boot", "Thymeleaf", "Tailwind CSS"],
+    github: "",
+    demo: "",
+    image: forageImg,
   },
 ];
 
 export default function Projects() {
   return (
     <section id="projects" className="py-20 px-6 md:px-12 lg:px-24 bg-base-200 flex items-center min-h-screen overflow-hidden">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -57,27 +76,32 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card bg-base-100 border border-base-300 shadow-xs hover:border-primary/40 transition-all duration-300 hover:-translate-y-1.5"
+              className="card bg-base-100 border border-base-300 shadow-xs hover:border-primary/40 transition-all duration-300 hover:-translate-y-1.5 overflow-hidden"
             >
+              <img 
+                src={project.image} 
+                alt={`${project.title} screenshot`} 
+                className="w-full h-48 object-cover"
+              />
               <div className="card-body p-6 md:p-8 flex flex-col gap-4">
                 <div className="flex justify-between items-center">
                   <div className="text-primary bg-primary/5 p-3 rounded-xl">
                     <Folder size={28} weight="regular" />
                   </div>
                   <div className="flex gap-4 text-base-content/60">
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="hover:text-primary transition-colors duration-200"
                       aria-label={`${project.title} GitHub repository`}
                     >
                       <GithubLogo size={22} weight="regular" />
                     </a>
-                    <a 
-                      href={project.demo} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="hover:text-primary transition-colors duration-200"
                       aria-label={`${project.title} Live Demo`}
                     >

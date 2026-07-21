@@ -59,7 +59,7 @@ export default function Contact() {
                 <div>
                   <p className="text-xs uppercase font-bold tracking-wider text-base-content/50 font-mono">Email</p>
                   <a href="mailto:yako.rabeson@gmail.com" className="text-sm font-medium hover:text-primary transition-colors duration-200">
-                    yako.rabeson@gmail.com
+                    heritianarabeson07@gmail.com
                   </a>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function Contact() {
                 <div>
                   <p className="text-xs uppercase font-bold tracking-wider text-base-content/50 font-mono">Phone</p>
                   <a href="tel:+261345678910" className="text-sm font-medium hover:text-primary transition-colors duration-200">
-                    +261 34 56 789 10
+                    +261 38 52 230 35
                   </a>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function Contact() {
               <h4 className="text-xs uppercase font-bold tracking-wider text-base-content/40 font-mono mb-4">Follow Me</h4>
               <div className="flex gap-3">
                 <a 
-                  href="https://github.com/Yako-Rabeson" 
+                  href="https://github.com/lordparzival0707" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn btn-outline btn-circle border-base-300 hover:bg-primary hover:border-primary hover:text-primary-content transition-all duration-300"
@@ -99,7 +99,7 @@ export default function Contact() {
                 >
                   <GithubLogo size={20} weight="regular" />
                 </a>
-                <a 
+                {/* <a 
                   href="https://linkedin.com/in/yako-rabeson" 
                   target="_blank" 
                   rel="noopener noreferrer" 
@@ -107,7 +107,7 @@ export default function Contact() {
                   aria-label="LinkedIn Profile"
                 >
                   <LinkedinLogo size={20} weight="regular" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        placeholder="John Doe"
+                        placeholder="Rakoto"
                         className="input input-bordered w-full bg-base-200/50 border-base-300 focus:outline-none focus:border-primary text-sm font-mono"
                       />
                     </div>
@@ -149,7 +149,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        placeholder="john@example.com"
+                        placeholder="rakoto@example.com"
                         className="input input-bordered w-full bg-base-200/50 border-base-300 focus:outline-none focus:border-primary text-sm font-mono"
                       />
                     </div>
