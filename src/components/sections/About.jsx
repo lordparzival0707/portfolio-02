@@ -24,8 +24,8 @@ export default function About() {
 
             <a
               className="btn btn-primary"
-              href="/Yako_RABESON_CV_2026.pdf"
-              download="Yako_RABESON_CV_2026.pdf"
+              href="/Yako_RABESON_CV.pdf"
+              download="Yako_RABESON_CV.pdf"
             >
               Download my CV
             </a>
